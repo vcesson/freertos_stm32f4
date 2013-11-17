@@ -14,7 +14,7 @@ SRCS+= $(FREERTOS_SRCS)/portable/GCC/ARM_CM4F/port.c
 SRCS+= $(FREERTOS_SRCS)/portable/MemMang/heap_2.c
 #STM32F4 sources
 SRCS+= main.c system_stm32f4xx.c  
-#STM32F4 statup fil
+#STM32F4 startup file
 SRCS+= lib/startup_stm32f4xx.s
 
 ###################################################
