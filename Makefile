@@ -39,7 +39,7 @@ OBJCOPY=arm-none-eabi-objcopy
 SIZE=arm-none-eabi-size
 
 CFLAGS  = -std=gnu99 -g -O2 -Wall -Tstm32_flash.ld
-CFLAGS += -mlittle-endian -mthumb -nostartfiles -mcpu=cortex-m4
+CFLAGS += -mlittle-endian -mthumb -mcpu=cortex-m4
 
 ifeq ($(FLOAT_TYPE), hard)
 CFLAGS += -fsingle-precision-constant -Wdouble-promotion
