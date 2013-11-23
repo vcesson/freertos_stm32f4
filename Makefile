@@ -62,8 +62,6 @@ CFLAGS += -Ilib/inc/core -Ilib/inc/peripherals
 CFLAGS += -I$(FREERTOS_SRCS)/include
 CFLAGS += -I$(FREERTOS_SRCS)/portable/GCC/ARM_CM4F
 
-OBJS = $(SRCS:.c=.o)
-
 ###################################################
 
 .PHONY: lib proj

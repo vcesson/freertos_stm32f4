@@ -27,10 +27,10 @@ int main(void) {
 
 	vSemaphoreCreateBinary(xTestSemaphore);
 
-	xTaskCreate(blink1, "LED1", configMINIMAL_STACK_SIZE, NULL, 1, NULL );
-	xTaskCreate(blink2, "LED2", configMINIMAL_STACK_SIZE, NULL, 1, NULL );
-	xTaskCreate(blink3, "LED3", configMINIMAL_STACK_SIZE, NULL, 1, NULL );
-	xTaskCreate(vTaskPB, "PB_test", configMINIMAL_STACK_SIZE, NULL, 1, NULL );
+	xTaskCreate(blink1, (const signed char *)"LED1", configMINIMAL_STACK_SIZE, NULL, 1, NULL );
+	xTaskCreate(blink2, (const signed char *)"LED2", configMINIMAL_STACK_SIZE, NULL, 1, NULL );
+	xTaskCreate(blink3, (const signed char *)"LED3", configMINIMAL_STACK_SIZE, NULL, 1, NULL );
+	xTaskCreate(vTaskPB, (const signed char *)"PB_test", configMINIMAL_STACK_SIZE, NULL, 1, NULL );
 
 	vTaskStartScheduler();
 
